@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 1220534668}
   - component: {fileID: 1220534671}
   - component: {fileID: 1220534672}
+  - component: {fileID: 1220534673}
   m_Layer: 0
   m_Name: gg_frente-removebg-preview_0
   m_TagString: Untagged
@@ -748,7 +749,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &1220534672
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -893,6 +894,19 @@ PolygonCollider2D:
       - {x: -0.475, y: -1.5849999}
       - {x: -0.24499999, y: -1.7049999}
   m_UseDelaunayMesh: 0
+--- !u!114 &1220534673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220534667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d1344a157648b4f8e9b4c751fe1fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 40
 --- !u!1 &1320420264
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,8 +989,8 @@ Transform:
   m_GameObject: {fileID: 1320420264}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0383, y: 1.6363, z: 0}
-  m_LocalScale: {x: 1.1085, y: 1.0051, z: 1}
+  m_LocalPosition: {x: 0.0054, y: 1.6363, z: 0}
+  m_LocalScale: {x: 1.1221739, y: 1.0051, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1131,8 +1145,8 @@ Transform:
   m_GameObject: {fileID: 1494340316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2465, y: -3.26, z: 0}
-  m_LocalScale: {x: 22.08666, y: 3.4731, z: 1}
+  m_LocalPosition: {x: 0.0327, y: -3.26, z: 0}
+  m_LocalScale: {x: 21.658178, y: 3.4731, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
