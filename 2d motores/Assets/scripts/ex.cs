@@ -16,11 +16,23 @@ public class ex : MonoBehaviour
         A= 17;
         B= 17; 
         
-        
-        C = B + A;
+        //
+        //C = B + A;
+        C = Soma(A, B);
         Debug.Log(C);
     }
 
+    
+       int Soma(int a, int b)
+       {
+           return C;
+       }
+      
+        
+    
+    
+    
+    
     
     void Update()
     {
