@@ -16,9 +16,8 @@ public class ex : MonoBehaviour
         A= 17;
         B= 17; 
         
-        //
-        //C = B + A;
-        C = Soma(A, B);
+        C = B + A;
+       
         Debug.Log(C);
     }
 
