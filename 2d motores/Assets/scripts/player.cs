@@ -1,34 +1,82 @@
 
+using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class player : MonoBehaviour
 {
-    private int numero;
-    public float velocidade = 5; 
+
+    public float velocidade = 5;
+    public float forcaDoPulo = 10;
+
+    private bool noChao = false;
+
+    private SpriteRenderer sprite;
+    private Rigidbody2D rb;
+
+
     void Start()
     {
-        numero = 27; 
+
+        sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
-    
+
+
     void Update()
     {
-        //debug.log(numero);
-        //numero = numero = 1; 
-        
+
         if (Input.GetKey(KeyCode.A))
-            
-            gameObject.transform.position += new Vector3(-velocidade * Time.deltaTime,0,0);
-        
+        {
+            gameObject.transform.position += new Vector3(-velocidade * Time.deltaTime, 0, 0);
+            sprite.flipX = true;
+        }
+
         if (Input.GetKey(KeyCode.D))
-            
-            gameObject.transform.position += new Vector3(velocidade * Time.deltaTime,0,0);
-        
-        if (Input.GetKey(KeyCode.Space))
-            
-            gameObject.transform.position += new Vector3(0,velocidade * Time.deltaTime,0);
-            
+        {
+            gameObject.transform.position += new Vector3(velocidade * Time.deltaTime, 0, 0);
+            sprite.flipX = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && noChao == true)
+        {
+            rb.AddForce(new Vector2(0, forcaDoPulo), ForceMode2D.Impulse);
+        }
+
     }
     
-}
+    
+    void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.CompareTag("Chao"))
+        {
+            noChao = true;
+        }
+
+    }
+
+    void OnCollisionExit2D(Collision2D colisao)
+    {
+
+
+        if (colisao.gameObject.CompareTag("Chao"))
+        {
+
+            noChao = false;
+
+        }
+
+    }
+}  
+
+
+
+
+
+
+
+
+
+

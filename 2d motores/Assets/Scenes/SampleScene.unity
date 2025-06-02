@@ -163,6 +163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc76bec778f7b142819c3bb8d11b1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpP: 10
+  atkP: 2
+  hpE: 10
+  atkE: 1.5
+  namePlayer: silas
+  nameEnemy: shrek
 --- !u!1 &493215364
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 1049641868}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004758562, y: -0, z: -0, w: 0.99998873}
-  m_LocalPosition: {x: 1.6525, y: 0.2159, z: -0.1985}
+  m_LocalPosition: {x: 14.49, y: -8.72, z: -0.21}
   m_LocalScale: {x: 0.8051, y: 0.8441, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -690,6 +696,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc76bec778f7b142819c3bb8d11b1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpP: 10
+  atkP: 2
+  hpE: 10
+  atkE: 1.5
+  namePlayer: silas
+  nameEnemy: shrek
 --- !u!1 &1220534667
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,10 +714,10 @@ GameObject:
   - component: {fileID: 1220534668}
   - component: {fileID: 1220534671}
   - component: {fileID: 1220534672}
-  - component: {fileID: 1220534674}
+  - component: {fileID: 1220534673}
   m_Layer: 0
   m_Name: gg_frente-removebg-preview_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +786,7 @@ Transform:
   m_GameObject: {fileID: 1220534667}
   serializedVersion: 2
   m_LocalRotation: {x: -0.010077493, y: 0.005693096, z: -0.0039546043, w: 0.9999252}
-  m_LocalPosition: {x: 12.8, y: -5.33, z: -0.1}
+  m_LocalPosition: {x: 2.91, y: 0.68, z: -0.12}
   m_LocalScale: {x: 0.44434634, y: 0.42090845, z: 0.96464}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -814,7 +826,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220534667}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -951,19 +963,20 @@ PolygonCollider2D:
       - {x: -0.475, y: -1.5849999}
       - {x: -0.24499999, y: -1.7049999}
   m_UseDelaunayMesh: 0
---- !u!114 &1220534674
+--- !u!114 &1220534673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220534667}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04d1344a157648b4f8e9b4c751fe1fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
+  forcaDoPulo: 10
 --- !u!1 &1320420264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1119,7 @@ GameObject:
   - component: {fileID: 1494340320}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1215,7 +1228,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494340316}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
