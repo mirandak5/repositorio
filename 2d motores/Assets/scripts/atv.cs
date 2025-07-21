@@ -3,9 +3,9 @@ using UnityEngine;
 public class atv : MonoBehaviour
 {
 
-
+private int resposta;
 void Start()
-    {private int resposta;}
+    {}
 
       
 
@@ -34,7 +34,7 @@ void Start()
         
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log();
+            //Debug.Log();
         }
             
             
