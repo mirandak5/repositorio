@@ -4,8 +4,8 @@ public class player : MonoBehaviour
 {
    
     
-    public float velocidade = 40;
-    public float forcaDoPulo = 4;
+    public float velocidade = 20;
+    public float forcaDoPulo = 7;
     
     private bool noChao = false;
     private bool andando = false;
@@ -29,7 +29,7 @@ public class player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.position += new Vector3(-velocidade * Time.deltaTime,0,0);
-            sprite.flipX = true;
+            sprite.flipX = false;
 
             andando = true;
         }
@@ -37,7 +37,7 @@ public class player : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.position += new Vector3(velocidade * Time.deltaTime,0,0);
-            sprite.flipX = false;
+            sprite.flipX = true;
 
             andando = true;
         }
