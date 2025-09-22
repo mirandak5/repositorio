@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03dc30bc6ad934843ac931e96686c338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 10
-  forcaDoPulo: 7
+  velocidade: 7
+  forcaDoPulo: 5
 --- !u!70 &5462056839380888884
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
