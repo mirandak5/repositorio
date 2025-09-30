@@ -6,7 +6,7 @@ public class mola : MonoBehaviour
     public float forcaDoPulo = 15;
     public bool boost = false;
     
-    
+    private Animator animator;
     
     void Start()
     {
@@ -16,7 +16,7 @@ public class mola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      animator = GetComponent<Animator>();
         
     }
     
@@ -26,7 +26,9 @@ public class mola : MonoBehaviour
         {
             other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,forcaDoPulo), ForceMode2D.Impulse);
             boost = true;
-                
+            animator.SetTrigger("pulo");       
         }
+        
+        
     }
 }
